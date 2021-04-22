@@ -87,24 +87,26 @@ function deselectAnswers(){
 
 }
 
-submitBtn.addEventListener("click",()=>{
+submitBtn.addEventListener("click", () => {
+    // check to see the answer
+    const answer = checkSelected();
 
-  const answer = checkSelected();
+    if (answer) {
+        if (answer === quizData[currentQuestion].correct) {
+            score++;
+        }
 
-  if(answer){
-    if(answer == quizData[currentQuestion].correct){
-      score++;
+        currentQuestion++;
+        if (currentQuestion < quizData.length) {
+            loadQuiz();
+        } else {
+            quiz.innerHTML = `
+                <h2>You answered correctly at ${score}/${quizData.length} questions.</h2>
+                <button onclick="location.reload()">Reload</button>
+            `;
+            submitBtn.classList.add("no-button");
+        }
     }
-    currentQuestion++;
-    if(currentQuestion<= quizData.length-1){
-      loadQuiz();
-    }else{
-      quiz.innerText = "You have answered correctly at " + score + "/" + quizData.length + " questions!!!"
-      submitBtn.classList.add("no-button")
-
-
-    }
-  }
 
 
 })
