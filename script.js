@@ -99,8 +99,10 @@ submitBtn.addEventListener("click",()=>{
     if(currentQuestion<= quizData.length-1){
       loadQuiz();
     }else{
-      quiz.innerText = "You have answered correctly at "+ score + "/" + quizData.length + " questions"
-      quiz.innerHTML = ' ${quiz}'
+      quiz.innerText = "You have answered correctly at " + score + "/" + quizData.length + " questions!!!"
+      submitBtn.classList.add("no-button")
+
+
     }
   }
 
