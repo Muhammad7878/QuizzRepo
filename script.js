@@ -12,7 +12,7 @@ const rButtons = document.querySelectorAll(".answer");
 
 const quizData = [
   {
-    question: "How old am I?",
+    question: "How old am I ?",
     a: 5,
     b: 27,
     c: 43,
@@ -20,7 +20,7 @@ const quizData = [
     correct: "b"
   },
   {
-    question:"What is the most used programming language in 2019",
+    question:"What is the most used programming language in 2019?",
     a:"Java",
     b:"C",
     c:"Scala",
@@ -28,7 +28,7 @@ const quizData = [
     correct:"a"
   },
   {
-    question:"Who is the President of USA",
+    question:"Who is the President of USA?",
     a:"Me",
     b:"Barak Obama",
     c:"Jenifer Aniston",
@@ -36,15 +36,15 @@ const quizData = [
     correct:"b"
   },
   {
-    question:"What does HTML stands for",
+    question:"What does HTML stands for?",
     a:"Hypertext Markup Language",
     b:"Harry Torter Making love",
-    c:"How to make love",
-    d:"How to moan louder",
+    c:"How to measure length",
+    d:"How to move louder",
     correct:"a"
   },
   {
-    question:"What year was JavaScript launched",
+    question:"What year was JavaScript launched?",
     a:"2019",
     b:"2000",
     c:"1995",
@@ -105,6 +105,7 @@ submitBtn.addEventListener("click", () => {
                 <button onclick="location.reload()">Reload</button>
             `;
             submitBtn.classList.add("no-button");
+
         }
     }
 
