@@ -38,7 +38,7 @@ const quizData = [
   {
     question:"What does HTML stands for?",
     a:"Hypertext Markup Language",
-    b:"Harry Torter Making love",
+    b:"Harry Torter moving luggage",
     c:"How to measure length",
     d:"How to move louder",
     correct:"a"
